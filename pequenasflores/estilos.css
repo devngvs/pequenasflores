@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+  color: #400000;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #8b0000; /* vermelho escuro */
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* NAVEGAÇÃO */
+.nav-menu {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  color: #ffe6e6;
+}
+
+/* ÍCONE DE CONTATO */
+.contato-icone img {
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.contato-icone img:hover {
+  transform: scale(1.1);
+}
+
+/* HERO (banner principal ou destaque) */
+.hero {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* SESSÕES GERAIS */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* PRODUTOS */
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produto h3 {
+  font-size: 20px;
+  color: #5a1a1a;
+  margin-bottom: 10px;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366; /* cor do WhatsApp */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.produto a:hover {
+  background-color: #1ebc59;
+}
+
+/* BLOCO DESTAQUE COM CITAÇÃO */
+blockquote {
+  font-style: italic;
+  color: #663333;
+  border-left: 4px solid #8b0000;
+  padding-left: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+}
