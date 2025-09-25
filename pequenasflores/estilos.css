@@ -1,0 +1,453 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+  color: #400000;
+  line-height: 1.6;
+  padding-bottom: 80px; /* espaço pro footer fixo */
+}
+
+/* HEADER */
+header {
+  background-color: #8b0000;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo img {
+  height: 80px;
+}
+
+/* MENU E CONTATO */
+.menu-e-contato {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* MENU HAMBURGUER */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTATO (WHATSAPP) */
+.contato-icone img {
+  height: 80px;
+  width: 80px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.contato-icone img:hover {
+  transform: scale(1.1);
+}
+
+/* MENU NAV */
+.nav-menu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  color: #ffe6e6;
+}
+
+/* HERO */
+.hero {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTEÚDO */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* PRODUTOS */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* <- fixo em 2 por linha */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  font-size: 20px;
+  color: #5a1a1a;
+  margin-bottom: 10px;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.produto a:hover {
+  background-color: #1ebc59;
+}
+
+/* BOTÃO CATÁLOGO */
+.botao-catalogo {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #8b0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-catalogo:hover {
+  background-color: #a30000;
+  transform: scale(1.05);
+}
+
+/* CITAÇÃO */
+blockquote {
+  font-style: italic;
+  color: #663333;
+  border-left: 4px solid #8b0000;
+  padding-left: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-e-contato {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #8b0000;
+    padding: 10px 0;
+  }
+
+  .nav-menu.ativo {
+    display: flex;
+  }
+
+  .nav-menu a {
+    margin: 10px 20px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+  .produtos-grid {
+    grid-template-columns: 1fr; /* 1 por linha no mobile */
+  }
+}
+
+
+  .logo img {
+    height: 70px;
+  }
+
+  body {
+    padding: 0 10px 80px;
+  }
+}
+
+
+/* HERO */
+.hero-santa {
+  text-align: center;
+  background: linear-gradient(#fff, #fdf3f3);
+  padding: 40px 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.hero-santa img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hero-santa h2 {
+  font-size: 28px;
+  color: #8b0000;
+  margin-bottom: 15px;
+}
+
+.hero-santa p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* CITAÇÃO */
+.citacao blockquote {
+  font-size: 20px;
+  font-style: italic;
+  color: #5a1a1a;
+  border-left: 5px solid #8b0000;
+  padding-left: 20px;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+/* CURIOSIDADES */
+.curiosidades {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff8f8;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.curiosidades h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8b0000;
+}
+
+.cards-curiosidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+/* SOBRE A MARCA */
+.sobre-marca {
+  background: #fff8f8;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.sobre-texto h2 {
+  font-size: 28px;
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.sobre-foto {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.sobre-foto img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.legenda {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #5a1a1a;
+  font-style: italic;
+}
+
+/* SOBRE A MARCA */
+.sobre-marca {
+  background: #fff8f8;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sobre-texto {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.sobre-texto h2 {
+  font-size: 28px;
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* FOTOS DAS FUNDADORAS */
+.sobre-fotos {
+  display: flex;
+  flex: 1 1 400px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.foto-card {
+  text-align: center;
+  flex: 1;
+}
+
+.foto-card img {
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.legenda {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #5a1a1a;
+  font-style: italic;
+}

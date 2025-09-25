@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Santa Teresinha | Pequenas Flores</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Pequenas Flores">
+    </div>
+
+    <!-- Botão hamburguer para mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu de navegação -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="santa-teresinha.html">Santa Teresinha</a>
+      <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <div class="contato-icone">
+      <a href="https://wa.me/5515991932132" target="_blank" title="Fale conosco pelo WhatsApp">
+        <img src="img/contato.png" alt="Contato">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+  <!-- HERO -->
+  <section class="hero-santa">
+    <img src="img/santaterezinha.jpg" alt="Santa Teresinha do Menino Jesus">
+    <h2>Santa Teresinha do Menino Jesus</h2>
+    <p>Santa Teresinha nos ensinou a viver com simplicidade, confiança e amor nas pequenas coisas. 
+       É dela que nasce o coração da nossa marca: florescer na infância, com delicadeza e fé.</p>
+  </section>
+
+  <!-- CITAÇÃO -->
+  <section class="citacao">
+    <blockquote>“Ser pequena é reconhecer o próprio nada, esperar tudo do bom Deus.”</blockquote>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section class="curiosidades">
+    <h3>Quem foi Santa Teresinha?</h3>
+    <p>Conhecida como a "Santa das Pequenas Coisas", Teresa de Lisieux nasceu em 1873 na França. 
+       Entrou no Carmelo aos 15 anos e viveu apenas até os 24, mas deixou um ensinamento eterno: 
+       encontrar Deus nas pequenas coisas do dia a dia.</p>
+    
+    <div class="cards-curiosidades">
+      <div class="card">
+        <h4>Simplicidade</h4>
+        <p>Ensinava que pequenos gestos de amor têm valor eterno.</p>
+      </div>
+      <div class="card">
+        <h4>Confiança</h4>
+        <p>Colocava toda sua esperança na misericórdia de Deus.</p>
+      </div>
+      <div class="card">
+        <h4>Amor</h4>
+        <p>Fez da vida um ato contínuo de amor a Jesus.</p>
+      </div>
+      <div class="card">
+        <h4>Inspiração</h4>
+        <p>Foi proclamada Doutora da Igreja em 1997 por São João Paulo II.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    &copy; 2025 Pequenas Flores
+  </footer>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('ativo');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pequenas Flores</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Pequenas Flores">
+    </div>
+
+    <!-- Botão hamburguer para mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu de navegação -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="santa-teresinha.html">Santa Teresinha</a>
+      <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <div class="contato-icone">
+      <a href="https://wa.me/5515991932132" target="_blank" title="Fale conosco pelo WhatsApp">
+        <img src="img/contato.png" alt="Contato">
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+<div class="hero">
+  <img src="img/banner.jpg" alt="Santa Teresinha e Rosas">
+</div>
+
+    <section>
+      <h2>Bem-vindo ao Jardim das Pequenas Flores!</h2>
+      <p>Uma marca católica dedicada à infância, à pureza e à beleza que floresce na simplicidade. Inspiradas por Santa Teresinha do Menino Jesus, oferecemos roupas e artigos que cuidam do corpo e do espírito.</p>
+
+      <a href="produtos.html" class="botao-catalogo">Ver Catálogo</a>
+    
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Pequenas Flores • Todos os direitos reservados
+  </footer>
+  
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('ativo');
+  }
+</script>
+
+</body>
+</html>

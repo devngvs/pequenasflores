@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nós | Pequenas Flores</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Pequenas Flores">
+    </div>
+
+    <!-- Botão hamburguer para mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu de navegação -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="santa-teresinha.html">Santa Teresinha</a>
+      <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <div class="contato-icone">
+      <a href="https://wa.me/5515991932132" target="_blank" title="Fale conosco pelo WhatsApp">
+        <img src="img/contato.png" alt="Contato">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+  <!-- SEÇÃO SOBRE A MARCA -->
+  <section class="sobre-marca">
+    <div class="sobre-conteudo">
+      <div class="sobre-texto">
+        <h2>Sobre a marca</h2>
+        <p>
+          Pequenas Flores nasceu do encontro de duas amigas unidas pela fé e pelo desejo de oferecer algo belo, puro e significativo para a infância. 
+          Mais do que roupas, nossa missão é vestir com propósito e semear o amor à santidade desde os primeiros passos.
+        </p>
+        <p>
+          O nome <strong>“Pequenas Flores”</strong> é inspirado em Santa Teresinha do Menino Jesus, a “Pequena Flor”, que nos ensinou que a santidade se encontra nos pequenos gestos do dia a dia. 
+          Assim, cada peça traz o significado de florescer na simplicidade, delicadeza e fé.
+        </p>
+      </div>
+
+      <!-- FOTOS DAS FUNDADORAS -->
+      <div class="sobre-fotos">
+        <div class="foto-card">
+          <img src="img/giovanna.png" alt="Fundadora 1 - Pequenas Flores">
+          <p class="legenda">Giovanna Paes</p>
+        </div>
+        <div class="foto-card">
+          <img src="img/nathalia.png" alt="Fundadora 2 - Pequenas Flores">
+          <p class="legenda">Nathália Venega</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPÓSITO -->
+  <section class="proposito">
+    <h3>Nosso propósito</h3>
+    <div class="proposito-cards">
+      <div class="card">
+        <h4>Infância</h4>
+        <p>Resgatar a pureza e beleza da infância, oferecendo significado em cada detalhe.</p>
+      </div>
+      <div class="card">
+        <h4>Fé</h4>
+        <p>Inspirar a espiritualidade desde cedo, transmitindo valores que florescem no coração.</p>
+      </div>
+      <div class="card">
+        <h4>Delicadeza</h4>
+        <p>Criar peças que traduzem amor, simplicidade e cuidado em cada costura.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+  <footer>
+    &copy; 2025 Pequenas Flores
+  </footer>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('ativo');
+  }
+</script>
+
+</body>
+</html>
